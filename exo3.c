@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/*---------------- STRUCTURES ----------------*/
+
 
 typedef struct Element {
     int valeur;
@@ -9,12 +9,12 @@ typedef struct Element {
 } Element;
 
 typedef struct File {
-    Element *sommet;  // début
-    Element *queue;   // fin
+    Element *sommet; 
+    Element *queue;   
 } File;
 
 
-/*---------------- INITIALISATION ----------------*/
+
 
 File *initialisation() {
     File *f = malloc(sizeof(File));
@@ -26,7 +26,7 @@ File *initialisation() {
 }
 
 
-/*---------------- ENFILER ----------------*/
+
 
 void enfiler(File *f, int nombre) {
     Element *nouveau = malloc(sizeof(Element));
@@ -44,7 +44,7 @@ void enfiler(File *f, int nombre) {
 }
 
 
-/*---------------- DEFILER ----------------*/
+
 
 int defiler(File *f) {
     int val = -1;
@@ -66,7 +66,7 @@ int defiler(File *f) {
 }
 
 
-/*---------------- AFFICHAGE ----------------*/
+
 
 void afficher(File *f) {
     Element *temp = f->sommet;

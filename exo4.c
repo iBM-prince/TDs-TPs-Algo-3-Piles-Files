@@ -93,7 +93,7 @@ int main(){
     printf("Servir le client avec le compte numéro: %d\n", defiler(f));
     afficher(f);
 
-    //clients en attente
+    
     printf("Clients en attente:\n");
     afficher(f);
  
